@@ -211,4 +211,16 @@ body {
       height: auto;
       padding: 20px 5px;
   }
+    
+  .header_content h1 {
+      margin-bottom: 1em;
+  }
+
+  .header_content {
+      text-align: center;
+  }
+
+  .vouchorar {
+      margin-top: 1em;
+  }
 }
