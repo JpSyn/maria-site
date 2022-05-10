@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,400;1,700&family=Caveat:wght@400;700&family=Satisfy&display=swap');
+
+:root {
+    --cor-branca: #d8fffe;
+    --verde-escuro: #008c76ff;
+    --font-cuphead: 'Alegreya Sans SC';
+    --font-desenhada: 'Caveat';
+    --font-titulo: 'Satisfy';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--cor-branca);
+    font-size: 18px;
+    font-family: var(--font-desenhada);
+}
+
+.header_container {
+    padding: 15px;
+    height: 100vh;
+    background-image: url(/assets/backgrounds.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--cor-branca);
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header_content h1 {
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.header_content ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    text-decoration: underline;
+}
+
+.header_content li:hover {
+    transform: scale(1.05);
+}
+
+.header_content li {
+    margin-left: 2rem;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: 1s all;
+}
+
+.header_content a {
+    color: var(--cor-branca);
+    text-decoration: none;
+}
+
+.vouchorar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.vouchorar h2 {
+    font-size: 5em;
+    text-shadow: black 0.1em 0.1em 0.2em
+}
+
+.vouchorar p {
+    font-size: 1.6em;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.fotos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+.subtitulo {
+    margin-top: 1.5em;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card_foto {
+    padding: 32px 0;
+    width: 412px;
+    height: 416px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(0,173,143);
+    background: linear-gradient(180deg, rgba(0,173,143,1) 10%, rgba(0,140,118,1) 73%);
+    color: var(--cor-branca);
+    margin-bottom: 1em;
+    font-family: var(--font-desenhada);
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+
+.card_foto img {
+    width: 80%;
+    text-align: center;
+    height: 60%;
+}
+
+.card_foto h3{
+    padding: 0 10px;
+}
+
+.h3_mensagens {
+    background: rgb(7, 115, 90);
+    color: var(--cor-branca);
+}
+
+.container_mensagens {
+    padding: 30px 10%;
+    background: rgb(29,230,184);
+    background: linear-gradient(180deg, rgba(29,230,184,1) 23%, rgba(208,189,78,1) 89%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-items: center;
+}
+
+.container_mensagens img {
+    margin-bottom: 1em;
+}
+
+.emocionante {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 30%;
+    background: rgba(208,189,78,1);
+    text-align: center;
+    color: var(--cor-branca);
+}
+
+.emocionante h4 {
+    font-size: 3em;
+}
+
+.emocionante p {
+    font-size: 1.8em;
+}
+
+
+@media (max-width: 764px)
+{
+  .vouchorar, .container{
+      height: auto;
+      width: auto;
+  }
+
+  .header_content {
+      flex-direction: column;
+      justify-content: center;
+  }
+
+  .vouchorar h2 {
+      margin-top: 1em;
+      font-size: 40px;
+  }
+
+  .vouchorar p {
+      font-size: 22px;
+  }
+
+  .container_mensagens {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .container_mensagens img {
+      width: 100%;
+  }
+
+  .emocionante {
+      height: auto;
+      padding: 20px 5px;
+  }
+}
